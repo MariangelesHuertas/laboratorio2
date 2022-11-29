@@ -1,0 +1,118 @@
+* {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .person-about {  display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 0.3fr 1.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title"
+      "person-info person-picture";
+  }
+  
+  .title { grid-area: title; }
+  
+  .person-picture { grid-area: person-picture; }
+  
+  .person-info {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "person-basic-info"
+      "person-degree"
+      "person-hobbies"
+      "knowledge-box";
+    grid-area: person-info;
+  }
+  
+  .knowledge-box {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "knowledge-title knowledge-title"
+      "areas-left areas-right";
+    grid-area: knowledge-box;
+  }
+  
+  .areas-left { grid-area: areas-left; }
+  
+  .areas-right { grid-area: areas-right; }
+  
+  .knowledge-title { grid-area: knowledge-title; }
+  
+  .person-basic-info { grid-area: person-basic-info; }
+  
+  .person-hobbies { grid-area: person-hobbies; }
+  
+  .person-degree { grid-area: person-degree; }
+  
+  
+  .box {
+    padding: 2em 4em 2em;
+    margin: 2em 15%;
+    -webkit-box-shadow: 11px 10px 15px 3px rgb(255, 162, 40);
+    -moz-box-shadow: 11px 10px 15px 3px rgba(236, 163, 28, 0.87);
+    box-shadow: 11px 10px 15px 3px rgba(211, 100, 10, 0.534);
+    background: #fcf8d8;
+  }
+  
+  .person-picture {
+    text-align: center;
+    background-color: transparent;
+    margin: auto;
+    display: block;
+  }
+  
+  .img-person {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 200px;
+    background-color: #EEE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  li, h3, h1, p {
+    text-align: left;
+    font-family: monospace;
+    font-weight: 400;
+  }
+  
+  h1 {
+    text-align: left;
+    padding-left: 1.3em;
+    font-size: 30px;
+  }
+  
+  p {
+    margin: auto;
+    text-align: justify;
+    padding: 1em 1em 1em;
+    text-size-adjust: 20px;
+    font-weight: 400;
+  
+  }
+  .areas-left, .areas-right {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .person-info {
+    align-items: center;
+    margin: 0.2em 1em 0.2em;
+  }
+  
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
